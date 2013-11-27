@@ -1,4 +1,4 @@
-package com.example.listdemo2;
+ï»¿package com.example.listdemo2;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -18,20 +18,20 @@ public class ListDemo2 extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_list_demo2);
 
-		 //§ä¨ìlistview²Õ¥ó
+		 //æ‰¾åˆ°listviewçµ„ä»¶
 		listView = (ListView) findViewById(R.id.listView1);
 		 
-		 //listviewª«¥ó¨Ï¥ÎsetAdapter¤èªk¡]¤ñ¹ïListActivity¬O¥ÎsetListAdapter¡^
+		 //listviewç‰©ä»¶ä½¿ç”¨setAdapteræ–¹æ³•ï¼ˆæ¯”å°ListActivityæ˜¯ç”¨setListAdapterï¼‰
 		listView.setAdapter(new ArrayAdapter<String>(this,
 		 android.R.layout.simple_list_item_checked, mStrings));
 		 
-//		android.R.layout.simple_list_item_1¡G¤@¦ætext
-//		android.R.layout.simple_list_item_2¡G¤@¦ætext¸û¤j¡A¤@¦ætext¸û¤p
-//		android.R.layout.simple_list_item_single_choice¡G³æ¿ï
-//		android.R.layout.simple_list_item_multiple_choice¡G¦h¿ï«ö¶s
-//		android.R.layout.simple_list_item_checked¡G¤Ä¿ï²°
+//		android.R.layout.simple_list_item_1ï¼šä¸€è¡Œtext
+//		android.R.layout.simple_list_item_2ï¼šä¸€è¡Œtextè¼ƒå¤§ï¼Œä¸€è¡Œtextè¼ƒå°
+//		android.R.layout.simple_list_item_single_choiceï¼šå–®é¸
+//		android.R.layout.simple_list_item_multiple_choiceï¼šå¤šé¸æŒ‰éˆ•
+//		android.R.layout.simple_list_item_checkedï¼šå‹¾é¸ç›’
 		
-		 //±Ò¥Î«öÁä¹LÂo¥\¯à¡]ª½±µ¥Îlistviewª«¥ó¡A¤£»İ­ngetListView¤èªk¡^
+		 //å•Ÿç”¨æŒ‰éµéæ¿¾åŠŸèƒ½ï¼ˆç›´æ¥ç”¨listviewç‰©ä»¶ï¼Œä¸éœ€è¦getListViewæ–¹æ³•ï¼‰
 		listView.setTextFilterEnabled(true);
 		
 //		listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -42,8 +42,8 @@ public class ListDemo2 extends Activity {
 //				ListView listView = (ListView) arg0;
 //				Toast.makeText(
 //						ListDemo2.this,
-//						"ID¡G" + arg3 +
-//						"   ¿ï³æ¤å¦r¡G"+ listView.getItemAtPosition(arg2).toString(),
+//						"IDï¼š" + arg3 +
+//						"   é¸å–®æ–‡å­—ï¼š"+ listView.getItemAtPosition(arg2).toString(),
 //						Toast.LENGTH_LONG).show();
 //
 //			}
@@ -58,11 +58,11 @@ public class ListDemo2 extends Activity {
 	}
 
 	 private static final String[] mStrings = new String[] {
-		 "¤j»æ¥]¤p»æ", "³H¥J·Î", "ªF¤sÀnÀY", "¯ä¨§»G", "¼í»æ",
-		 "¨§ªá", "«Cµì¤U³J","½Ş¦å¿|", "¤j¸z¥]¤p¸z", "ÄĞ¤ôÂû",
-		 "¯N­»¸z","¨®½ü»æ","¬Ã¯]¥¤¯ù","ÄĞ¶pÂû","¤j¼öª¯",
-		 "¬µÂû±Æ","¤s½Ş¦×","ªá¥Í¦B","Íñ¦B","¤ôªG¦B",
-		 "¥]¤ß¯»¶ê","±Æ°©¶p","¨F¯ù¾{³½","³¹³½¿N","«×¤p¤ë",
+		 "å¤§é¤…åŒ…å°é¤…", "èšµä»”ç…", "æ±å±±é´¨é ­", "è‡­è±†è…", "æ½¤é¤…",
+		 "è±†èŠ±", "é’è›™ä¸‹è›‹","è±¬è¡€ç³•", "å¤§è…¸åŒ…å°è…¸", "é¹¹æ°´é›",
+		 "çƒ¤é¦™è…¸","è»Šè¼ªé¤…","çç å¥¶èŒ¶","é¹¹é…¥é›","å¤§ç†±ç‹—",
+		 "ç‚¸é›æ’","å±±è±¬è‚‰","èŠ±ç”Ÿå†°","å‰‰å†°","æ°´æœå†°",
+		 "åŒ…å¿ƒç²‰åœ“","æ’éª¨é…¥","æ²™èŒ¶é­·é­š","ç« é­šç‡’","åº¦å°æœˆ",
 		 "aaa","abc","bbb","bcd","123"
 		 };	
 }

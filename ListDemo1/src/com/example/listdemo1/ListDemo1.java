@@ -1,4 +1,4 @@
-package com.example.listdemo1;
+ï»¿package com.example.listdemo1;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -32,19 +32,19 @@ public class ListDemo1 extends ListActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		// ª`·N¡G¤£¯à¨Ï¥Îmain¤¤ªºlayout¡A¥Î¤F·|¥X²{¿ù»~
+		// æ³¨æ„ï¼šä¸èƒ½ä½¿ç”¨mainä¸­çš„layoutï¼Œç”¨äº†æœƒå‡ºç¾éŒ¯èª¤
 		// setContentView(R.layout.main);
 		
 		setListAdapter(new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, mStrings));
 
-		// ±Ò¥Î«öÁä¹LÂo¥\¯à
+		// å•Ÿç”¨æŒ‰éµéæ¿¾åŠŸèƒ½
 		getListView().setTextFilterEnabled(true);
 	}
 
-	private static final String[] mStrings = new String[] { "¤j»æ¥]¤p»æ", "³H¥J·Î",
-			"ªF¤sÀnÀY", "¯ä¨§»G", "¼í»æ", "¨§ªá", "«Cµì¤U³J", "½Ş¦å¿|", "¤j¸z¥]¤p¸z", "ÄĞ¤ôÂû", "¯N­»¸z",
-			"¨®½ü»æ", "¬Ã¯]¥¤¯ù", "ÄĞ¶pÂû", "¤j¼öª¯", "¬µÂû±Æ", "¤s½Ş¦×", "ªá¥Í¦B", "Íñ¦B", "¤ôªG¦B",
-			"¥]¤ß¯»¶ê", "±Æ°©¶p", "¨F¯ù¾{³½", "³¹³½¿N", "«×¤p¤ë", "aaa", "abc", "bbb", "bcd",
+	private static final String[] mStrings = new String[] { "å¤§é¤…åŒ…å°é¤…", "èšµä»”ç…",
+			"æ±å±±é´¨é ­", "è‡­è±†è…", "æ½¤é¤…", "è±†èŠ±", "é’è›™ä¸‹è›‹", "è±¬è¡€ç³•", "å¤§è…¸åŒ…å°è…¸", "é¹¹æ°´é›", "çƒ¤é¦™è…¸",
+			"è»Šè¼ªé¤…", "çç å¥¶èŒ¶", "é¹¹é…¥é›", "å¤§ç†±ç‹—", "ç‚¸é›æ’", "å±±è±¬è‚‰", "èŠ±ç”Ÿå†°", "å‰‰å†°", "æ°´æœå†°",
+			"åŒ…å¿ƒç²‰åœ“", "æ’éª¨é…¥", "æ²™èŒ¶é­·é­š", "ç« é­šç‡’", "åº¦å°æœˆ", "aaa", "abc", "bbb", "bcd",
 			"123" };
 }

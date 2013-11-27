@@ -1,4 +1,4 @@
-package com.example.listdemo3;
+ï»¿package com.example.listdemo3;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,7 +19,7 @@ public class ListDemo3 extends ListActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		
-		 //§â¸ê®Æ¥[¤JArrayList¤¤
+		 //æŠŠè³‡æ–™åŠ å…¥ArrayListä¸­
 		 for(int i=0; i<mPlaces.length; i++){
 		 HashMap<String,String> item = new HashMap<String,String>();
 		 item.put( "food", mFoods[i]);
@@ -27,7 +27,7 @@ public class ListDemo3 extends ListActivity {
 		 list.add( item );
 		 }
 		 
-		 //·s¼WSimpleAdapter
+		 //æ–°å¢SimpleAdapter
 		 adapter = new SimpleAdapter( 
 		 this, 
 		 list,
@@ -35,10 +35,10 @@ public class ListDemo3 extends ListActivity {
 		 new String[] { "food","place" },
 		 new int[] { android.R.id.text1, android.R.id.text2 } );
 		 
-		 //ListActivity³]©wadapter
+		 //ListActivityè¨­å®šadapter
 		 setListAdapter( adapter );
 		 
-		 //±Ò¥Î«öÁä¹LÂo¥\¯à¡A³o¨â¦æ¸ê®Æ³£·|¶i¦æ¹LÂo
+		 //å•Ÿç”¨æŒ‰éµéæ¿¾åŠŸèƒ½ï¼Œé€™å…©è¡Œè³‡æ–™éƒ½æœƒé€²è¡Œéæ¿¾
 		 getListView().setTextFilterEnabled(true);		
 	}
 
@@ -50,20 +50,20 @@ public class ListDemo3 extends ListActivity {
 	}
 
 	 private static final String[] mPlaces = new String[] {
-		 "¥x¥_¥«", "·s¥_¥«", "¥x«n¥«", "°ª¶¯¥«", "­]µ¯¿¤",
-		 "¥x¥_¥«", "·s¥_¥«", "¥x«n¥«", "°ª¶¯¥«", "­]µ¯¿¤",
-		 "¥x¥_¥«", "·s¥_¥«", "¥x«n¥«", "°ª¶¯¥«", "­]µ¯¿¤",
-		 "¥x¥_¥«", "·s¥_¥«", "¥x«n¥«", "°ª¶¯¥«", "­]µ¯¿¤",
-		 "¥x¥_¥«", "·s¥_¥«", "¥x«n¥«", "°ª¶¯¥«", "­]µ¯¿¤",
-		 "¥x¥_¥«", "·s¥_¥«", "789", "cde", "abc"
+		 "å°åŒ—å¸‚", "æ–°åŒ—å¸‚", "å°å—å¸‚", "é«˜é›„å¸‚", "è‹—ç²Ÿç¸£",
+		 "å°åŒ—å¸‚", "æ–°åŒ—å¸‚", "å°å—å¸‚", "é«˜é›„å¸‚", "è‹—ç²Ÿç¸£",
+		 "å°åŒ—å¸‚", "æ–°åŒ—å¸‚", "å°å—å¸‚", "é«˜é›„å¸‚", "è‹—ç²Ÿç¸£",
+		 "å°åŒ—å¸‚", "æ–°åŒ—å¸‚", "å°å—å¸‚", "é«˜é›„å¸‚", "è‹—ç²Ÿç¸£",
+		 "å°åŒ—å¸‚", "æ–°åŒ—å¸‚", "å°å—å¸‚", "é«˜é›„å¸‚", "è‹—ç²Ÿç¸£",
+		 "å°åŒ—å¸‚", "æ–°åŒ—å¸‚", "789", "cde", "abc"
 		 };
 		 
 		 private static final String[] mFoods = new String[] {
-		 "¤j»æ¥]¤p»æ", "³H¥J·Î", "ªF¤sÀnÀY", "¯ä¨§»G", "¼í»æ",
-		 "¨§ªá", "«Cµì¤U³J","½Ş¦å¿|", "¤j¸z¥]¤p¸z", "ÄĞ¤ôÂû",
-		 "¯N­»¸z","¨®½ü»æ","¬Ã¯]¥¤¯ù","ÄĞ¶pÂû","¤j¼öª¯",
-		 "¬µÂû±Æ","¤s½Ş¦×","ªá¥Í¦B","Íñ¦B","¤ôªG¦B",
-		 "¥]¤ß¯»¶ê","±Æ°©¶p","¨F¯ù¾{³½","³¹³½¿N","«×¤p¤ë",
+		 "å¤§é¤…åŒ…å°é¤…", "èšµä»”ç…", "æ±å±±é´¨é ­", "è‡­è±†è…", "æ½¤é¤…",
+		 "è±†èŠ±", "é’è›™ä¸‹è›‹","è±¬è¡€ç³•", "å¤§è…¸åŒ…å°è…¸", "é¹¹æ°´é›",
+		 "çƒ¤é¦™è…¸","è»Šè¼ªé¤…","çç å¥¶èŒ¶","é¹¹é…¥é›","å¤§ç†±ç‹—",
+		 "ç‚¸é›æ’","å±±è±¬è‚‰","èŠ±ç”Ÿå†°","å‰‰å†°","æ°´æœå†°",
+		 "åŒ…å¿ƒç²‰åœ“","æ’éª¨é…¥","æ²™èŒ¶é­·é­š","ç« é­šç‡’","åº¦å°æœˆ",
 		 "aaa","abc","bbb","bcd","123"
 		 };	
 }
